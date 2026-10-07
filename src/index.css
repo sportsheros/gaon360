@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Mukta', system-ui, sans-serif;
+  --font-display: 'Baloo 2', 'Mukta', system-ui, sans-serif;
+
+  --color-ink-950: #060a13;
+  --color-ink-900: #0b1220;
+  --color-ink-800: #111a2e;
+  --color-ink-700: #1a2540;
+  --color-saffron: #f59e0b;
+  --color-marigold: #fbbf24;
+  --color-leaf: #10b981;
+  --color-sky: #38bdf8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ink-900 text-slate-200 font-sans antialiased;
+    background-image:
+      radial-gradient(60rem 40rem at 10% -10%, rgb(245 158 11 / 0.10), transparent 60%),
+      radial-gradient(50rem 40rem at 100% 0%, rgb(16 185 129 / 0.10), transparent 60%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-white;
+    line-height: 1.15;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-marigold;
+  }
+  ::selection {
+    @apply bg-saffron/40 text-white;
+  }
+}
+
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+@utility glass {
+  @apply rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+}
+@utility glass-strong {
+  @apply rounded-2xl border border-white/10 bg-ink-800/80 backdrop-blur-xl;
+}
+@utility text-gradient {
+  @apply bg-gradient-to-r from-marigold via-saffron to-leaf bg-clip-text text-transparent;
+}
+@utility btn {
+  @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 sm:text-base;
+}
+@utility btn-primary {
+  @apply btn bg-gradient-to-r from-saffron to-marigold text-ink-950 shadow-lg shadow-saffron/20 hover:shadow-saffron/40 hover:brightness-110;
+}
+@utility btn-ghost {
+  @apply btn border border-white/15 bg-white/5 text-white hover:border-white/30 hover:bg-white/10;
+}
+@utility chip {
+  @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

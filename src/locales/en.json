@@ -1,0 +1,430 @@
+{
+  "brand": {
+    "name": "GAON 360",
+    "tagline": "My Village • My Identity • Our Future",
+    "taglineEn": "Know Your Village. Build Your Future."
+  },
+  "meta": {
+    "home": { "title": "GAON 360 | My Village • My Identity • Our Future", "description": "The digital identity, development vision and 5-year plan of our village. Know Your Village. Build Your Future." },
+    "village": { "title": "Our Village | GAON 360", "description": "Introduction, history, culture, statistics and gallery of our village." },
+    "vision": { "title": "Our Vision | GAON 360", "description": "Eight pillars of our village's future – education, health, employment, infrastructure, women, seniors, agriculture and environment." },
+    "development": { "title": "Development Roadmap | GAON 360", "description": "First 100 days, first year and the 5-year development timeline of the village." },
+    "education": { "title": "Children & Career | GAON 360", "description": "Education, career guidance, digital skills, sports and scholarship awareness for every child." },
+    "youth": { "title": "Youth & Employment | GAON 360", "description": "Skills, training, entrepreneurship and local employment for the youth of the village." },
+    "seniors": { "title": "Senior Citizens | GAON 360", "description": "Respect, healthcare awareness, pension and government scheme information for our elders." },
+    "women": { "title": "Women Empowerment | GAON 360", "description": "Self Help Groups, skills, home business, digital literacy and safety resources for women." },
+    "farmers": { "title": "Farmer Development | GAON 360", "description": "Modern farming awareness, irrigation, soil testing, schemes and training for farmers." },
+    "manifesto": { "title": "5-Year Sankalp | GAON 360", "description": "Problem, vision, approach, priority and timeline for every development point." },
+    "about": { "title": "About the Candidate | GAON 360", "description": "Who the candidate is, their connection to the village and the responsibilities they want to take on." },
+    "contact": { "title": "Contact | GAON 360", "description": "Phone, WhatsApp, email and location – reach out with your suggestions." },
+    "notFound": { "title": "Page not found | GAON 360", "description": "This page does not exist." }
+  },
+  "nav": {
+    "home": "Home",
+    "village": "Our Village",
+    "vision": "Our Vision",
+    "development": "Development",
+    "education": "Children & Career",
+    "youth": "Youth & Employment",
+    "seniors": "Senior Citizens",
+    "women": "Women Empowerment",
+    "farmers": "Farmer Development",
+    "manifesto": "5-Year Sankalp",
+    "about": "About",
+    "contact": "Contact",
+    "more": "More",
+    "focusAreas": "Focus Areas"
+  },
+  "header": {
+    "search": "Search",
+    "assistant": "Village Assistant",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "switchLang": "Change language",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "badge": "GAON 360 • Phase 1",
+    "line1": "My Village",
+    "line2": "My Identity",
+    "line3": "Our Future",
+    "supporting": "A village where education is better, youth get opportunities, elders get respect and every step of development is transparent.",
+    "ctaVision": "See Our Vision",
+    "ctaManifesto": "See 5-Year Sankalp",
+    "ctaExplore": "Explore the Village",
+    "hint": "Drag to rotate • Scroll / pinch to zoom • Tap a place"
+  },
+  "stats": {
+    "eyebrow": "Village at a glance",
+    "title": "Our village in numbers",
+    "subtitle": "Static figures for Phase 1 – will be updated from verified records.",
+    "population": "Population",
+    "families": "Families",
+    "students": "Students",
+    "seniorCitizens": "Senior Citizens",
+    "farmers": "Farmers",
+    "youth": "Youth"
+  },
+  "village3d": {
+    "eyebrow": "3D Village",
+    "title": "Explore the village in 3D",
+    "subtitle": "Rotate, zoom and click on important places to see basic information.",
+    "loading": "Building the village…",
+    "fallback": "3D view is not supported on this device. Use the list of places below.",
+    "places": "Important places",
+    "close": "Close",
+    "staticNote": "Static sample data",
+    "facts": {
+      "students": "Students",
+      "teachers": "Teachers",
+      "rooms": "Rooms",
+      "wards": "Wards",
+      "meetings": "Gram Sabha meetings / year",
+      "staff": "Health staff",
+      "beds": "Beds",
+      "area": "Area",
+      "farmers": "Farmers",
+      "crops": "Main crops",
+      "shops": "Shops",
+      "capacity": "Capacity"
+    },
+    "locations": {
+      "school": { "name": "Government School", "desc": "Primary & upper-primary school – the heart of our children's future." },
+      "panchayat": { "name": "Panchayat Bhawan", "desc": "Centre for Gram Sabha meetings, records and public services." },
+      "health": { "name": "Health Sub-Centre", "desc": "Basic health check-ups, vaccination and maternal care." },
+      "pond": { "name": "Village Pond", "desc": "Traditional water body – key to groundwater recharge." },
+      "farms": { "name": "Farmlands", "desc": "Wheat, mustard, millet and vegetables are the main crops." },
+      "playground": { "name": "Playground", "desc": "Sports and fitness space for children and youth." },
+      "market": { "name": "Market & Shops", "desc": "Daily needs, small businesses and local trade." },
+      "community": { "name": "Community Hall", "desc": "Space for events, trainings, SHG meetings and festivals." }
+    }
+  },
+  "home": {
+    "pillarsEyebrow": "Our Vision",
+    "pillarsTitle": "8 pillars of a better village",
+    "pillarsSubtitle": "Every development decision connects to one of these pillars.",
+    "focusEyebrow": "For everyone",
+    "focusTitle": "A plan for every member of the village",
+    "focusSubtitle": "Children, youth, women, farmers and elders – each has a clear section.",
+    "roadmapEyebrow": "Roadmap",
+    "roadmapTitle": "From the first 100 days to a model village",
+    "roadmapCta": "See full roadmap",
+    "manifestoTitle": "Not just promises – a clear direction, plan and continuous effort.",
+    "manifestoText": "Read the 5-year Sankalp: what the problem is, what we want to change, how, and with what priority.",
+    "manifestoCta": "Read the Sankalp",
+    "focus": {
+      "education": "Guidance, digital skills and career paths for every child.",
+      "youth": "Skill → training → opportunity → income.",
+      "seniors": "Respect, health awareness and help with schemes.",
+      "women": "SHGs, home business and financial awareness.",
+      "farmers": "Modern farming, irrigation and soil testing awareness."
+    }
+  },
+  "village": {
+    "eyebrow": "Our Village",
+    "title": "Know our village",
+    "subtitle": "Our identity, history and culture – the foundation for our future.",
+    "introTitle": "Village introduction",
+    "fields": {
+      "name": "Village",
+      "district": "District",
+      "block": "Block",
+      "panchayat": "Gram Panchayat",
+      "state": "State",
+      "area": "Area",
+      "literacy": "Literacy rate",
+      "pincode": "PIN code"
+    },
+    "geoTitle": "Geography",
+    "geo": "The village lies on fertile plains with farmland on three sides, a traditional pond on the west and a link road connecting it to the block headquarters.",
+    "historyTitle": "Village history",
+    "history": [
+      "The village was settled several generations ago by farming families who chose this land for its fertile soil and the natural pond.",
+      "Over time, the village grew around the pond, the old banyan tree and the temple – places that are still at the heart of community life.",
+      "The first school opened decades ago, and since then education, roads and electricity have slowly reached every home. The next step is to make this progress faster, planned and transparent."
+    ],
+    "cultureTitle": "Village culture",
+    "culture": [
+      { "title": "Traditions", "desc": "Collective decision-making, respect for elders and helping each other in farming seasons." },
+      { "title": "Festivals", "desc": "Holi, Diwali, Teej, Makar Sankranti and the annual village fair bring everyone together." },
+      { "title": "Local culture", "desc": "Folk songs, traditional food, handicrafts and community feasts." },
+      { "title": "Important places", "desc": "The pond, the old banyan tree, the temple, the school and the Panchayat Bhawan." }
+    ],
+    "galleryTitle": "Village gallery",
+    "gallerySubtitle": "Photos will be added from the village – placeholders shown for now.",
+    "gallery": {
+      "village": "Village",
+      "school": "Schools",
+      "roads": "Roads",
+      "fields": "Fields",
+      "events": "Events",
+      "community": "Community"
+    }
+  },
+  "vision": {
+    "eyebrow": "Our Vision",
+    "title": "Our Village — Our Future",
+    "subtitle": "The vision is divided into 8 major pillars. Each pillar has clear, realistic goals.",
+    "pillars": {
+      "education": { "title": "Education", "desc": "Better education and career guidance for every child.", "points": ["Better school facilities", "Career guidance sessions", "Digital learning"] },
+      "healthcare": { "title": "Healthcare", "desc": "Strengthen basic healthcare awareness and facilities.", "points": ["Regular health camps", "Vaccination awareness", "Maternal & child care"] },
+      "employment": { "title": "Employment", "desc": "Local skills, entrepreneurship and employment opportunities.", "points": ["Skill training", "Small business support", "Connect to govt. programs"] },
+      "infrastructure": { "title": "Infrastructure", "desc": "Roads, water, drainage, electricity and basic infrastructure.", "points": ["Paved lanes", "Clean drinking water", "Drainage & street lights"] },
+      "women": { "title": "Women Empowerment", "desc": "Women's skill development, SHGs and entrepreneurship.", "points": ["Active SHGs", "Home businesses", "Digital & financial literacy"] },
+      "seniors": { "title": "Senior Citizen Support", "desc": "Respect, healthcare and government scheme awareness.", "points": ["Pension help desk", "Health check-ups", "Community events"] },
+      "agriculture": { "title": "Agriculture", "desc": "Better access to modern farming and relevant information.", "points": ["Soil testing awareness", "Irrigation", "Training & schemes"] },
+      "environment": { "title": "Environment", "desc": "Cleanliness, plantation, water conservation and a green village.", "points": ["Waste management", "Plantation drives", "Pond revival"] }
+    }
+  },
+  "development": {
+    "eyebrow": "Development Roadmap",
+    "title": "A step-by-step development plan",
+    "subtitle": "Understand first, then build. Every phase has clear priorities.",
+    "phases": {
+      "days100": {
+        "title": "First 100 Days",
+        "period": "Understand & assess",
+        "items": ["Village problem survey", "Water problem identification", "Road assessment", "Drainage assessment", "School assessment", "Cleanliness assessment", "Senior citizen requirements", "Youth skill requirements"]
+      },
+      "year1": {
+        "title": "First Year",
+        "period": "Build the foundation",
+        "items": ["Priority infrastructure", "Education initiatives", "Skill development", "Cleanliness initiatives", "Plantation", "Basic public facilities"]
+      }
+    },
+    "longTermTitle": "5-Year Vision",
+    "longTermSubtitle": "Development shown as a 5-year timeline.",
+    "milestones": {
+      "foundation": { "title": "Foundation", "desc": "Survey, planning and urgent basic needs." },
+      "education": { "title": "Education & Skills", "desc": "Stronger school, career guidance and skill training." },
+      "employment": { "title": "Employment & Local Business", "desc": "Small businesses, SHGs and local work opportunities." },
+      "smart": { "title": "Smart Village Initiatives", "desc": "Digital services, Wi-Fi points and information access." },
+      "model": { "title": "Model Village Vision", "desc": "A clean, educated, self-reliant and transparent village." }
+    },
+    "note": "Actual dates and commitments will be configured according to the final manifesto."
+  },
+  "focus": {
+    "education": {
+      "eyebrow": "Children & Career",
+      "title": "Every child's future",
+      "objective": "No child should be left behind only because they did not get the right guidance.",
+      "sections": [
+        { "title": "Education", "desc": "Better school facilities, regular attendance and learning support." },
+        { "title": "Career Guidance", "desc": "Sessions with professionals so children know all available paths." },
+        { "title": "Digital Skills", "desc": "Basic computer, internet safety and online learning skills." },
+        { "title": "Sports", "desc": "A playground, equipment and regular sports activities." },
+        { "title": "Competitive Exams", "desc": "Information and guidance for exams after 10th and 12th." },
+        { "title": "Scholarships Awareness", "desc": "Help families learn about eligible scholarships and how to apply." },
+        { "title": "Innovation", "desc": "Science fairs, curiosity clubs and problem-solving activities." },
+        { "title": "Skill Development", "desc": "Practical skills alongside studies for a confident future." }
+      ],
+      "flowTitle": "Career roadmap",
+      "flow": ["Class 10", "Stream Selection", "Class 12", "Higher Education / Skill", "Internship / Training", "Career"],
+      "note": "Career information is static in Phase 1. An AI Career Counsellor may be added in a future phase."
+    },
+    "youth": {
+      "eyebrow": "Youth & Employment",
+      "title": "Village youth — the village's strength",
+      "objective": "Every young person should have a path from skill to stable income – without having to leave the village unless they choose to.",
+      "sections": [
+        { "title": "Skill Development", "desc": "Identify in-demand skills and connect youth to training." },
+        { "title": "Digital Skills", "desc": "Computers, online services and digital work opportunities." },
+        { "title": "Entrepreneurship", "desc": "Guidance to start and run a small business." },
+        { "title": "Local Employment", "desc": "Map local work opportunities in farming, services and trade." },
+        { "title": "Government Skill Programs", "desc": "Awareness about government skill and apprenticeship programs." },
+        { "title": "Career Guidance", "desc": "Mentoring by people from the village who have succeeded." },
+        { "title": "Small Business", "desc": "Support for shops, services and agro-based units." },
+        { "title": "Self Employment", "desc": "Information on credit and self-employment schemes." }
+      ],
+      "flowTitle": "From skill to a strong village",
+      "flow": ["Skill", "Training", "Opportunity", "Income", "Strong Family", "Strong Village"],
+      "note": "Program details will be shared after the youth skill survey."
+    },
+    "seniors": {
+      "eyebrow": "Senior Citizens",
+      "title": "Those who built the village deserve our respect — it is our responsibility.",
+      "objective": "Our elders should live with dignity, good health and easy access to their entitlements.",
+      "sections": [
+        { "title": "Senior Citizen Respect", "desc": "Honouring elders and including their experience in village decisions." },
+        { "title": "Healthcare Awareness", "desc": "Regular check-up camps for BP, sugar, eyes and joints." },
+        { "title": "Government Scheme Awareness", "desc": "Information about schemes meant for senior citizens." },
+        { "title": "Pension Information", "desc": "Help understanding eligibility and the application process." },
+        { "title": "Emergency Support Information", "desc": "Important numbers and nearest health facility details." },
+        { "title": "Community Events", "desc": "Gatherings, satsang and intergenerational activities." },
+        { "title": "Digital Assistance", "desc": "Help with phones, documents and online services." }
+      ],
+      "flowTitle": "Support path",
+      "flow": ["Awareness", "Help desk", "Application support", "Follow-up", "Dignified life"],
+      "note": "No personal medical or sensitive data is collected on this website."
+    },
+    "women": {
+      "eyebrow": "Women Empowerment",
+      "title": "Strong women, strong families",
+      "objective": "Every woman should have the skills, information and support to earn, decide and lead.",
+      "sections": [
+        { "title": "Self Help Groups", "desc": "Strengthen SHGs for savings, credit and collective enterprise." },
+        { "title": "Skill Development", "desc": "Tailoring, food processing, handicrafts and more." },
+        { "title": "Home Business", "desc": "Guidance to start income activities from home." },
+        { "title": "Entrepreneurship", "desc": "Help with planning, marketing and market linkages." },
+        { "title": "Digital Literacy", "desc": "Smartphone, UPI and online services training." },
+        { "title": "Financial Awareness", "desc": "Bank accounts, savings, insurance and safe credit." },
+        { "title": "Government Schemes", "desc": "Information about schemes for women and girls." },
+        { "title": "Women Safety Resources", "desc": "Helpline numbers and information on support services." }
+      ],
+      "flowTitle": "Path to empowerment",
+      "flow": ["Join SHG", "Learn a skill", "Start earning", "Financial independence", "Leadership"],
+      "note": "Emergency: Women Helpline 181 • Police 112"
+    },
+    "farmers": {
+      "eyebrow": "Farmer Development",
+      "title": "Strong farmers, strong village",
+      "objective": "Farmers should get timely, correct information and support to reduce cost and increase income.",
+      "sections": [
+        { "title": "Modern Farming Awareness", "desc": "New techniques, better seeds and crop diversification." },
+        { "title": "Irrigation", "desc": "Water-saving irrigation and better use of available sources." },
+        { "title": "Soil Testing Awareness", "desc": "Understand soil health to use the right fertiliser." },
+        { "title": "Agricultural Information", "desc": "Crop calendar and best practices in simple language." },
+        { "title": "Government Schemes", "desc": "Awareness about agriculture schemes and how to apply." },
+        { "title": "Training", "desc": "Field demonstrations with agriculture experts." },
+        { "title": "Farmer Support", "desc": "Farmer groups for collective buying and selling." }
+      ],
+      "flowTitle": "Farming improvement cycle",
+      "flow": ["Soil test", "Right crop & seed", "Efficient irrigation", "Better yield", "Better price"],
+      "note": "No live weather, mandi prices or AI agriculture assistant in Phase 1."
+    }
+  },
+  "manifesto": {
+    "eyebrow": "5-Year Sankalp",
+    "title": "Our 5-Year Sankalp",
+    "subtitle": "For every development point, we clearly explain:",
+    "questions": ["What is the problem?", "What do we want to do?", "How do we want to do it?", "With what priority?"],
+    "labels": { "problem": "Problem", "vision": "Vision", "approach": "Approach", "priority": "Priority", "timeline": "Timeline" },
+    "priority": { "high": "High", "medium": "Medium", "long": "Long Term" },
+    "timeline": { "d100": "100 Days", "y1": "1 Year", "y5": "5 Years" },
+    "filterAll": "All",
+    "filterLabel": "Filter by priority",
+    "count": "{{count}} points",
+    "disclaimer": "This is a draft. The final manifesto will be reviewed according to applicable election rules. All commitments are subject to available resources and government approvals.",
+    "items": {
+      "water": { "title": "Clean drinking water", "problem": "Some lanes face irregular water supply, especially in summer.", "vision": "Regular, clean drinking water for every household.", "approach": "Map problem areas, repair pipelines and follow up with the concerned department." },
+      "drainage": { "title": "Drainage", "problem": "Waterlogging in lanes during the monsoon.", "vision": "Covered drainage and no standing water in lanes.", "approach": "Drainage survey, priority list of lanes and phased construction through available schemes." },
+      "roads": { "title": "Roads & lanes", "problem": "Many internal lanes are kutcha or damaged.", "vision": "Paved, safe internal roads connecting every ward.", "approach": "Road assessment, ward-wise priority and transparent tracking of each work." },
+      "streetlights": { "title": "Street lights", "problem": "Dark lanes at night are unsafe for women and elders.", "vision": "Working street lights on all main lanes.", "approach": "Audit existing lights, repair faulty ones and add solar lights where needed." },
+      "school": { "title": "Better school", "problem": "Classrooms, toilets and learning resources need improvement.", "vision": "A school where every child wants to come and learn.", "approach": "School assessment with teachers and parents, then work with the education department." },
+      "career": { "title": "Career guidance", "problem": "Students lack information on careers beyond a few options.", "vision": "Every student knows their options after 10th and 12th.", "approach": "Regular career sessions and a village mentor network." },
+      "skills": { "title": "Youth skills", "problem": "Many youth lack job-ready skills.", "vision": "Youth trained in skills that lead to income.", "approach": "Youth skill survey and connection with government skill programs." },
+      "health": { "title": "Health awareness", "problem": "Limited awareness and irregular health check-ups.", "vision": "Regular camps and better use of the health sub-centre.", "approach": "Coordinate health camps with the health department and ASHA workers." },
+      "seniors": { "title": "Senior citizen help desk", "problem": "Elders find it hard to access pensions and schemes.", "vision": "Every eligible elder gets their entitlements with dignity.", "approach": "A monthly help desk at the Panchayat Bhawan for information and paperwork." },
+      "women": { "title": "Women & SHGs", "problem": "Limited income opportunities for women.", "vision": "Active SHGs and women-led small businesses.", "approach": "Strengthen SHGs, skill training and market linkages." },
+      "farmers": { "title": "Farmer support", "problem": "Farmers lack timely information on techniques and schemes.", "vision": "Informed farmers with better yields and lower costs.", "approach": "Soil testing awareness camps, expert demonstrations and scheme help." },
+      "cleanliness": { "title": "Clean village", "problem": "Garbage piles and no regular waste collection.", "vision": "A clean village with regular waste management.", "approach": "Cleanliness assessment, collection points and community drives." },
+      "green": { "title": "Green village", "problem": "Falling green cover and groundwater levels.", "vision": "More trees, revived pond and water conservation.", "approach": "Plantation drives, pond revival and rainwater harvesting awareness." },
+      "transparency": { "title": "Transparency", "problem": "People often don't know the status of village works.", "vision": "Every work and its progress visible to every citizen.", "approach": "Regular Gram Sabha updates and public display of works and progress." },
+      "digital": { "title": "Digital village", "problem": "Limited access to online services in the village.", "vision": "Easy access to digital services and information.", "approach": "Digital help points and phased smart-village initiatives." }
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "About the candidate",
+    "positioning": "More than \"what I want\" – \"what responsibility I want to take for the village.\"",
+    "name": "Candidate Name",
+    "role": "Sarpanch Candidate, Gram Panchayat",
+    "photoAlt": "Photo of the candidate",
+    "fields": {
+      "education": "Education",
+      "experience": "Experience",
+      "connection": "Village connection",
+      "contribution": "Social contribution"
+    },
+    "education": "Graduate (details to be added)",
+    "experience": "Years of work in community service and local initiatives (details to be added).",
+    "connection": "Born and raised in the village; family has lived here for generations.",
+    "contribution": "Involved in cleanliness drives, education support and helping elders with schemes (details to be added).",
+    "visionTitle": "Vision",
+    "vision": "A village where every child is guided, every youth has an opportunity, every elder is respected and every rupee of development is accounted for.",
+    "responsibilitiesTitle": "Responsibilities I want to take",
+    "responsibilities": [
+      "Listen to every ward and keep the Gram Sabha active and regular.",
+      "Share the status of every development work openly.",
+      "Prioritise water, drainage, roads and cleanliness.",
+      "Connect children and youth with guidance and skills.",
+      "Make sure elders, women and farmers know about and receive their entitlements."
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "subtitle": "Share your suggestions, problems or ideas for the village.",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "address": "Village address",
+    "addressValue": "Panchayat Bhawan, Sundarpur",
+    "social": "Social media",
+    "location": "Location",
+    "callNow": "Call Now",
+    "whatsappBtn": "WhatsApp",
+    "directions": "Get Directions"
+  },
+  "suggestion": {
+    "eyebrow": "Your opinion",
+    "title": "In your view, what is the village's biggest priority?",
+    "subtitle": "Choose one or more. Your choice is not stored on any server.",
+    "options": {
+      "road": "Road",
+      "water": "Water",
+      "drainage": "Drainage",
+      "streetlights": "Street Lights",
+      "education": "Education",
+      "healthcare": "Healthcare",
+      "employment": "Employment",
+      "cleanliness": "Cleanliness"
+    },
+    "submit": "Share on WhatsApp",
+    "selectFirst": "Select at least one priority",
+    "thanks": "Thank you! Your opinion matters.",
+    "message": "My priorities for the village: {{list}}"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search something about the village...",
+    "noResults": "No results found. Try another word.",
+    "hint": "Try: school, water, pension, farmer, SHG",
+    "results": "Results",
+    "close": "Close search"
+  },
+  "ai": {
+    "button": "🤖 Village Assistant",
+    "title": "GAON AI",
+    "comingSoon": "GAON AI will be available soon.",
+    "intro": "Until then, here are answers to common questions.",
+    "faqTitle": "Frequently asked questions",
+    "faqs": [
+      { "q": "What is GAON 360?", "a": "A digital platform presenting the village's identity, development vision and 5-year plan." },
+      { "q": "What will happen in the first 100 days?", "a": "A village problem survey and assessments of water, roads, drainage, school, cleanliness and needs of elders and youth." },
+      { "q": "How can I give a suggestion?", "a": "Use the priority section on the Contact page or reach out on WhatsApp." },
+      { "q": "Is my data collected?", "a": "No. Phase 1 is a static website – no login, database or personal data." },
+      { "q": "Where can I see the manifesto?", "a": "On the 5-Year Sankalp page, with problem, vision, approach, priority and timeline for each point." }
+    ],
+    "futureTitle": "Coming in future phases",
+    "future": ["Static content", "Backend", "Village database", "RAG", "AI Assistant"],
+    "close": "Close"
+  },
+  "footer": {
+    "about": "The digital identity, development vision and public manifesto of our village.",
+    "quickLinks": "Quick links",
+    "focusLinks": "Focus areas",
+    "rights": "GAON 360. All rights reserved.",
+    "phase": "Phase 1 • Static website • No personal data collected",
+    "coreMessage": "Changing a village needs not just promises, but a clear direction, plan and continuous effort."
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "backHome": "Back to home",
+    "notFound": "Page not found",
+    "notFoundText": "The page you are looking for does not exist or has moved.",
+    "loading": "Loading…",
+    "backToTop": "Back to top"
+  }
+}
