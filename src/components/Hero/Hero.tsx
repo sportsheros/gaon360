@@ -15,7 +15,7 @@ export function Hero() {
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-saffron/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 top-60 h-96 w-96 rounded-full bg-leaf/20 blur-3xl" />
 
-      <div className="container-x relative grid items-center gap-10 pb-12 lg:grid-cols-[1fr_1.15fr] lg:gap-12 lg:pb-20">
+      <div className="container-x relative grid grid-cols-1 items-center gap-10 pb-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-12 lg:pb-20">
         <div>
           <motion.span
             initial={{ opacity: 0, y: 10 }}

@@ -15,8 +15,8 @@ export function Footer() {
         <blockquote className="mx-auto mb-14 max-w-3xl text-center font-display text-xl font-semibold text-white sm:text-2xl">
           “{t('footer.coreMessage')}”
         </blockquote>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-1">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
+          <div className="col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2.5">
               <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" width={36} height={36} className="h-9 w-9" />
               <span className="font-display text-xl font-bold text-white">
@@ -54,7 +54,7 @@ export function Footer() {
             </ul>
           </nav>
 
-          <div>
+          <div className="col-span-2 sm:col-span-1">
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-300">{t('nav.contact')}</h2>
             <ul className="space-y-3 text-sm">
               <li>

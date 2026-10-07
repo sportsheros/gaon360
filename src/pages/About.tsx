@@ -15,7 +15,7 @@ export default function About() {
     <>
       <PageHeader eyebrow={t('about.eyebrow')} title={t('about.title')} subtitle={t('about.positioning')} />
       <Section>
-        <div className="grid gap-8 lg:grid-cols-[22rem_1fr]">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[22rem_minmax(0,1fr)]">
           <Reveal className="glass h-fit overflow-hidden lg:sticky lg:top-28">
             {/* Replace with <img src="/images/candidate.jpg" alt={t('about.photoAlt')} /> */}
             <div

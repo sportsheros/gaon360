@@ -16,7 +16,7 @@ export function ContactCards() {
   ]
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
       <div className="space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${contactInfo.phone}`} className="btn-primary flex-1">

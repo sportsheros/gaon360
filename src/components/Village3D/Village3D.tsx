@@ -2,9 +2,9 @@ import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { useTranslation } from 'react-i18next'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Hand, X } from 'lucide-react'
+import { Check, Hand, Move3d, X } from 'lucide-react'
 import { landmarks, type LandmarkId } from '../../data/village'
-import { useIsMobile, useReducedMotion } from '../../hooks/useMediaQuery'
+import { useIsMobile, useMediaQuery, useReducedMotion } from '../../hooks/useMediaQuery'
 import { VillageScene } from './VillageScene'
 
 function hasWebGL() {
@@ -29,6 +29,10 @@ export default function Village3D({ className = '', heightClass = 'h-[420px] sm:
   const [selected, setSelected] = useState<LandmarkId | null>(null)
   const [webgl] = useState(hasWebGL)
   const [inView, setInView] = useState(true)
+  // On touch screens the canvas would swallow page scrolling, so 3D controls stay locked until the user taps in.
+  const isTouch = useMediaQuery('(pointer: coarse)')
+  const [touchActive, setTouchActive] = useState(false)
+  const locked = webgl && isTouch && !touchActive
   const containerRef = useRef<HTMLDivElement>(null)
 
   // Pause rendering when the canvas is off-screen to save battery on mobile.
@@ -50,7 +54,7 @@ export default function Village3D({ className = '', heightClass = 'h-[420px] sm:
   const numberFmt = new Intl.NumberFormat(i18n.language === 'hi' ? 'hi-IN' : 'en-IN')
 
   return (
-    <div className={className}>
+    <div className={`min-w-0 ${className}`}>
       <div
         ref={containerRef}
         className={`relative overflow-hidden rounded-3xl border border-white/10 bg-ink-800 shadow-2xl shadow-black/40 ${heightClass}`}
@@ -65,7 +69,7 @@ export default function Village3D({ className = '', heightClass = 'h-[420px] sm:
               shadows={!isMobile}
               dpr={isMobile ? [1, 1.5] : [1, 2]}
               frameloop={inView ? 'always' : 'never'}
-              camera={{ position: [18, 16, 20], fov: isMobile ? 50 : 40, near: 0.1, far: 200 }}
+              camera={{ position: isMobile ? [23, 21, 26] : [18, 16, 20], fov: isMobile ? 50 : 40, near: 0.1, far: 200 }}
               gl={{ antialias: !isMobile, powerPreference: 'high-performance' }}
               aria-label={t('village3d.title')}
               role="img"
@@ -85,8 +89,32 @@ export default function Village3D({ className = '', heightClass = 'h-[420px] sm:
           </div>
         )}
 
-        {webgl && !selected && (
-          <div className="pointer-events-none absolute left-3 top-3 flex items-center gap-2 rounded-full bg-ink-900/70 px-3 py-1.5 text-xs text-slate-300 backdrop-blur">
+        {locked && (
+          <button
+            type="button"
+            onClick={() => setTouchActive(true)}
+            className="absolute inset-0 z-10 flex items-end justify-center bg-gradient-to-t from-ink-950/60 via-transparent to-transparent pb-5"
+            style={{ touchAction: 'pan-y' }}
+          >
+            <span className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-ink-900/85 px-4 text-sm font-semibold text-white shadow-lg backdrop-blur">
+              <Move3d className="h-4 w-4 text-marigold" aria-hidden="true" />
+              {t('village3d.tapToExplore')}
+            </span>
+          </button>
+        )}
+
+        {webgl && isTouch && touchActive && (
+          <button
+            type="button"
+            onClick={() => setTouchActive(false)}
+            className="absolute right-3 top-3 z-10 inline-flex min-h-10 items-center gap-1.5 rounded-full bg-white px-4 text-sm font-semibold text-ink-900 shadow-lg"
+          >
+            <Check className="h-4 w-4" aria-hidden="true" /> {t('village3d.done')}
+          </button>
+        )}
+
+        {webgl && !selected && !locked && (
+          <div className="pointer-events-none absolute left-3 top-3 hidden max-w-[calc(100%-1.5rem)] items-center gap-2 rounded-full bg-ink-900/70 px-3 py-1.5 text-xs text-slate-300 backdrop-blur sm:flex">
             <Hand className="h-3.5 w-3.5 text-marigold" aria-hidden="true" />
             {t('hero.hint')}
           </div>
@@ -100,7 +128,7 @@ export default function Village3D({ className = '', heightClass = 'h-[420px] sm:
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 16 }}
               transition={{ duration: 0.2 }}
-              className="glass-strong absolute inset-x-3 bottom-3 p-4 shadow-2xl sm:inset-x-auto sm:left-4 sm:bottom-4 sm:w-80"
+              className="glass-strong absolute inset-x-3 bottom-3 z-20 p-4 shadow-2xl sm:inset-x-auto sm:left-4 sm:bottom-4 sm:w-80"
               role="region"
               aria-live="polite"
               aria-label={labels[current.id]}

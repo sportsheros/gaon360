@@ -73,6 +73,8 @@
     "fallback": "3D view is not supported on this device. Use the list of places below.",
     "places": "Important places",
     "close": "Close",
+    "tapToExplore": "Tap to explore the 3D village",
+    "done": "Done",
     "staticNote": "Static sample data",
     "facts": {
       "students": "Students",

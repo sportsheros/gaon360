@@ -70,3 +70,8 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Letter-spacing breaks Devanagari conjuncts and matras – only track Latin text. */
+:lang(hi) [class*='tracking-'] {
+  letter-spacing: normal;
+}

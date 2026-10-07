@@ -32,7 +32,7 @@ export default function Village() {
       <PageHeader eyebrow={t('village.eyebrow')} title={t('village.title')} subtitle={t('village.subtitle')} />
 
       <Section>
-        <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
           <Reveal className="glass p-6 sm:p-8">
             <h2 className="text-2xl font-bold">{t('village.introTitle')}</h2>
             <dl className="mt-6 grid grid-cols-2 gap-4">
@@ -86,10 +86,10 @@ export default function Village() {
         <SectionHeading title={t('village.galleryTitle')} subtitle={t('village.gallerySubtitle')} />
         <ul className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3">
           {galleryItems.map((g, i) => (
-            <li key={g.id} className={i === 0 ? 'col-span-2 row-span-2 md:col-span-1' : ''}>
-              <Reveal delay={i * 0.05}>
+            <li key={g.id} className={i === 0 ? 'md:col-span-2 md:row-span-2' : ''}>
+              <Reveal delay={i * 0.05} className="h-full">
                 <figure
-                  className="group relative grid aspect-[4/3] place-items-center overflow-hidden rounded-2xl border border-white/10"
+                  className="group relative grid aspect-[4/3] h-full w-full place-items-center overflow-hidden rounded-2xl border border-white/10"
                   style={{
                     background: `linear-gradient(135deg, hsl(${g.hue} 70% 35% / 0.55), hsl(${(g.hue + 60) % 360} 60% 20% / 0.6))`,
                   }}

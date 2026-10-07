@@ -31,12 +31,17 @@ export function FocusPage({ id }: { id: FocusId }) {
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {sections.map((s, i) => (
             <li key={s.title}>
-              <Reveal delay={(i % 4) * 0.06} className="glass group h-full p-6 transition hover:-translate-y-1 hover:border-white/20">
-                <span className={`grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br ${config.accent} text-ink-950`}>
+              <Reveal
+                delay={(i % 4) * 0.06}
+                className="glass group flex h-full items-start gap-4 p-5 transition hover:-translate-y-1 hover:border-white/20 sm:block sm:p-6"
+              >
+                <span className={`grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br ${config.accent} text-ink-950`}>
                   <Icon name={config.icons[i] ?? config.icon} className="h-5 w-5" />
                 </span>
-                <h2 className="mt-4 text-lg font-bold">{s.title}</h2>
-                <p className="mt-1.5 text-sm text-slate-400">{s.desc}</p>
+                <div className="min-w-0">
+                  <h2 className="text-lg font-bold sm:mt-4">{s.title}</h2>
+                  <p className="mt-1 text-sm text-slate-400 sm:mt-1.5">{s.desc}</p>
+                </div>
               </Reveal>
             </li>
           ))}
