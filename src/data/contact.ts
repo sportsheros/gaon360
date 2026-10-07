@@ -15,6 +15,14 @@ export const contactInfo = {
   ],
 }
 
+/** "Powered by" credit in the footer. Set url to link the MediBook site. */
+export const poweredBy = {
+  name: 'MediBook',
+  url: '',
+}
+
+export const author = 'Jeet Beniwal'
+
 export const suggestionOptions: { id: string; icon: IconName }[] = [
   { id: 'road', icon: 'Route' },
   { id: 'water', icon: 'Droplets' },

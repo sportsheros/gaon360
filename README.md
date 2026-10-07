@@ -5,6 +5,8 @@
 Phase 1: a static, bilingual (Hindi/English) village vision & development website with an interactive 3D village.
 The full product requirements are in [CLAUDE.md](CLAUDE.md).
 
+**Author:** Jeet Beniwal · Powered by MediBook
+
 ## Tech stack
 
 React 19 · Vite · TypeScript · Tailwind CSS v4 · Framer Motion · Three.js + React Three Fiber + drei · React Router · i18next · Lucide icons

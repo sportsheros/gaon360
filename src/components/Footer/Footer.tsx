@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowUp, Mail, MessageCircle, Phone } from 'lucide-react'
+import { Activity, ArrowUp, Mail, MessageCircle, Phone } from 'lucide-react'
 import { navItems } from '../../data/navigation'
 import { focusOrder, focusPages } from '../../data/vision'
-import { contactInfo } from '../../data/contact'
+import { author, contactInfo, poweredBy } from '../../data/contact'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -80,7 +80,15 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {t('footer.rights')}
           </p>
-          <p>{t('footer.phase')}</p>
+          <div className="flex flex-col items-center gap-2 text-center">
+            <p>{t('footer.phase')}</p>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <PoweredBy label={t('footer.poweredBy')} />
+              <p className="text-sm">
+                {t('footer.author')} <span className="font-semibold text-slate-300">{author}</span>
+              </p>
+            </div>
+          </div>
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0 })}
@@ -91,5 +99,26 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  )
+}
+
+/** MediBook mark: pulse icon + bold wordmark, as in the MediBook brand. */
+function PoweredBy({ label }: { label: string }) {
+  const content = (
+    <>
+      <span>{label}</span>
+      <span className="inline-flex items-center gap-1 font-bold text-white">
+        <Activity className="h-4 w-4" strokeWidth={2.5} aria-hidden="true" />
+        {poweredBy.name}
+      </span>
+    </>
+  )
+  const cls = 'inline-flex min-h-8 items-center gap-1.5 text-sm text-slate-400'
+  return poweredBy.url ? (
+    <a href={poweredBy.url} target="_blank" rel="noopener noreferrer" className={cls + ' hover:text-white'}>
+      {content}
+    </a>
+  ) : (
+    <p className={cls}>{content}</p>
   )
 }

@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "GAON 360 – Phase 1 static village vision & development website",
+  "author": "Jeet Beniwal",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
