@@ -80,14 +80,11 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {t('footer.rights')}
           </p>
-          <div className="flex flex-col items-center gap-2 text-center">
-            <p>{t('footer.phase')}</p>
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              <PoweredBy label={t('footer.poweredBy')} />
-              <p className="text-sm">
-                {t('footer.author')} <span className="font-semibold text-slate-300">{author}</span>
-              </p>
-            </div>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-center">
+            <PoweredBy label={t('footer.poweredBy')} />
+            <p className="text-sm">
+              {t('footer.author')} <span className="font-semibold text-slate-300">{author}</span>
+            </p>
           </div>
           <button
             type="button"
