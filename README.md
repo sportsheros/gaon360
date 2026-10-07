@@ -46,7 +46,7 @@ src/
 | Gallery photos | `public/images/` and the `<figure>` in `src/pages/Village.tsx` |
 | Site URL for canonical/OG tags | `SITE_URL` in `src/hooks/useSeo.ts` and `index.html` |
 
-> All values currently in the repo (village "Sundarpur", numbers, phone, candidate) are **placeholders**.
+> All values currently in the repo (students, seniors, farmers, youth counts, 3D landmark facts, phone, candidate) are **placeholders**.
 > Replace them with verified information, and have the final election content reviewed against applicable election rules before publishing.
 
 ## Features

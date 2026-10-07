@@ -1,13 +1,12 @@
 import { useTranslation } from 'react-i18next'
 import { Globe, Mail, MapPin, MessageCircle, Navigation, Phone } from 'lucide-react'
 import { contactInfo } from '../../data/contact'
-import { village } from '../../data/village'
 import { Reveal } from '../common/Section'
 
 export function ContactCards() {
   const { t } = useTranslation()
-  const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${village.coordinates.lat},${village.coordinates.lng}`
-  const embedUrl = `https://maps.google.com/maps?q=${village.coordinates.lat},${village.coordinates.lng}&z=14&output=embed`
+  const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(contactInfo.mapsQuery)}`
+  const embedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(contactInfo.mapsQuery)}&z=14&output=embed`
 
   const items = [
     { icon: Phone, label: t('contact.phone'), value: contactInfo.phoneDisplay, href: `tel:${contactInfo.phone}` },

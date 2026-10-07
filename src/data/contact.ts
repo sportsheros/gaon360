@@ -6,7 +6,7 @@ export const contactInfo = {
   phoneDisplay: '+91 00000 00000',
   whatsapp: '910000000000',
   email: 'contact@gaon360.in',
-  mapsQuery: 'Sundarpur Gram Panchayat',
+  mapsQuery: 'Bathain Khurd, Chhata, Mathura, Uttar Pradesh 281403',
   social: [
     { id: 'facebook', label: 'Facebook', url: 'https://facebook.com/' },
     { id: 'instagram', label: 'Instagram', url: 'https://instagram.com/' },

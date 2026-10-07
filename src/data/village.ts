@@ -9,6 +9,7 @@ export interface VillageProfile {
   name: Localized
   district: Localized
   block: Localized
+  tehsil: Localized
   gramPanchayat: Localized
   state: Localized
   pincode: string
@@ -20,25 +21,27 @@ export interface VillageProfile {
   farmers: number
   youth: number
   literacyRate: number
-  coordinates: { lat: number; lng: number }
+  /** Census year the population figures come from. */
+  censusYear: number
 }
 
 export const village: VillageProfile = {
-  name: { hi: 'सुंदरपुर', en: 'Sundarpur' },
-  district: { hi: 'जिला का नाम', en: 'District Name' },
-  block: { hi: 'ब्लॉक का नाम', en: 'Block Name' },
-  gramPanchayat: { hi: 'ग्राम पंचायत सुंदरपुर', en: 'Gram Panchayat Sundarpur' },
-  state: { hi: 'राज्य', en: 'State' },
-  pincode: '000000',
-  areaHectares: 860,
-  population: 5240,
-  families: 1120,
+  name: { hi: 'बठैन खुर्द', en: 'Bathain Khurd' },
+  district: { hi: 'मथुरा', en: 'Mathura' },
+  block: { hi: 'नंदगाँव', en: 'Nandgaon' },
+  tehsil: { hi: 'छाता', en: 'Chhata' },
+  gramPanchayat: { hi: 'ग्राम पंचायत बठैन खुर्द', en: 'Gram Panchayat Bathain Khurd' },
+  state: { hi: 'उत्तर प्रदेश', en: 'Uttar Pradesh' },
+  pincode: '281403',
+  areaHectares: 938.2,
+  population: 2717,
+  families: 424,
   students: 780,
   seniorCitizens: 310,
   farmers: 640,
   youth: 1450,
-  literacyRate: 72,
-  coordinates: { lat: 26.9124, lng: 75.7873 },
+  literacyRate: 69.04,
+  censusYear: 2011,
 }
 
 export type StatKey = 'population' | 'families' | 'students' | 'seniorCitizens' | 'farmers' | 'youth'

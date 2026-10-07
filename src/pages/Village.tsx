@@ -19,6 +19,7 @@ export default function Village() {
     ['name', L(village.name)],
     ['panchayat', L(village.gramPanchayat)],
     ['block', L(village.block)],
+    ['tehsil', L(village.tehsil)],
     ['district', L(village.district)],
     ['state', L(village.state)],
     ['pincode', village.pincode],
