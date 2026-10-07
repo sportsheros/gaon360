@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  // Set BASE_PATH=/gaon360/ when hosting under a sub-path (e.g. GitHub Pages project site).
+  base: process.env.BASE_PATH ?? '/',
   plugins: [react(), tailwindcss()],
   build: {
     chunkSizeWarningLimit: 1200,

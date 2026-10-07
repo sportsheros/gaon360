@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2.5">
-              <img src="/favicon.svg" alt="" width={36} height={36} className="h-9 w-9" />
+              <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" width={36} height={36} className="h-9 w-9" />
               <span className="font-display text-xl font-bold text-white">
                 GAON <span className="text-gradient">360</span>
               </span>

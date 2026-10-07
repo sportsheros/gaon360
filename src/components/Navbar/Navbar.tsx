@@ -66,7 +66,7 @@ export function Navbar({ onSearch, onAssistant }: NavbarProps) {
     >
       <nav className="container-x flex h-16 items-center gap-3 sm:h-20" aria-label="Main">
         <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label="GAON 360 – Home">
-          <img src="/favicon.svg" alt="" width={36} height={36} className="h-9 w-9" />
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" width={36} height={36} className="h-9 w-9" />
           <span className="font-display text-xl font-bold tracking-tight text-white">
             GAON <span className="text-gradient">360</span>
           </span>
